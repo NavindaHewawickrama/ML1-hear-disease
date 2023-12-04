@@ -6,11 +6,15 @@ from sklearn.metrics import accuracy_score
 
 
 heart_data = pd.read_csv('C:/Users/hewaw/OneDrive/Desktop/ML research/python_test/heart_disease_data.csv')
-heart_data.info()
+#heart_data.info()
 
 
 #checking for missing values
-heart_data.isnull().sum()
+#heart_data.isnull().sum()
 
 #statistical measures of the data
-heart_data.describe()
+#heart_data.describe()
+
+
+#checking the distribution of target variable
+#print(heart_data['target'].value_counts())
