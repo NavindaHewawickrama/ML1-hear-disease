@@ -18,3 +18,27 @@ heart_data = pd.read_csv('C:/Users/hewaw/OneDrive/Desktop/ML research/python_tes
 
 #checking the distribution of target variable
 #print(heart_data['target'].value_counts())
+
+#splitting the features and target
+
+
+#splitting the features and target
+
+x = heart_data.drop(columns='target',axis=1)
+y = heart_data['target']
+#print(x,y)
+
+
+#splitting the data into taining data and test data.
+
+x_train,x_test, y_train,y_test = train_test_split(x,y,test_size = 0.2, stratify=y, random_state = 2)
+#print(x.shape,x_train.shape,x_test.shape)
+
+#Model trianing
+#logistic regression
+
+model = LogisticRegression()
+
+#training the logitic regression model with training data
+
+model.fit()
